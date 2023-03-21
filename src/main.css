@@ -27,12 +27,12 @@ body {
 }
 
 .container,
-.formInput,
-.formButton {
+.form__input,
+.form__button {
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
-.formHidden {
+.form--hidden {
     display: none;
 }
 
@@ -44,12 +44,12 @@ body {
     margin-bottom: 0;
 }
 
-.formTitle {
+.form__title {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.formMessage {
+.form__message {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -58,15 +58,15 @@ body {
     color: var(--color-success);
 }
 
-.formMessageError {
+.form__message--error {
     color: var(--color-error);
 }
 
-.formInputGroup {
+.form__input-group {
     margin-bottom: 1rem;
 }
 
-.formInput {
+.form__input {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -78,23 +78,23 @@ body {
     transition: background 0.2s, border-color 0.2s;
 }
 
-.formInput:focus {
+.form__input:focus {
     border-color: var(--color-primary);
     background: #ffffff;
 }
 
-.formInputError {
+.form__input--error {
     color: var(--color-error);
     border-color: var(--color-error);
 }
 
-.formInputErrorMessage {
+.form__input-error-message {
     margin-top: 0.5rem;
     font-size: 0.85rem;
     color: var(--color-error);
 }
 
-.formButton {
+.form__button {
     width: 100%;
     padding: 1rem 2rem;
     font-weight: bold;
@@ -107,24 +107,24 @@ body {
     background: var(--color-primary);
 }
 
-.formButton:hover {
+.form__button:hover {
     background: var(--color-primary-dark);
 }
 
-.formButton:active {
+.form__button:active {
     transform: scale(0.98);
 }
 
-.formText {
+.form__text {
     text-align: center;
 }
 
-.formLink {
+.form__link {
     color: var(--color-secondary);
     text-decoration: none;
     cursor: pointer;
 }
 
-.formLink:hover {
+.form__link:hover {
     text-decoration: underline;
 }
