@@ -6,21 +6,20 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`formMessage${type}`);
 }
 
-function setInputError(inputElement, message) {
-    inputElement.classList.add("formInputError");
-    inputElement.parentElement.querySelector(".formInputErrorMessage").textContent = message;
-}
+
 
 function clearInputError(inputElement) {
     inputElement.classList.remove("formInputError");
     inputElement.parentElement.querySelector(".formInputErrorMessage").textContent = "";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { //Start of DOM Event listener
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
 
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+        //The following function will control when the login form and the createAccountForm should be displayed to the user
+        //depending on whether or not the user has select the #linkCreateAccount on the login form
         e.preventDefault();
         loginForm.classList.add("formHidden");
         createAccountForm.classList.remove("formHidden");
@@ -51,4 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInputError(inputElement);
         });
     });
-});
+}); //End of DOM event listener
