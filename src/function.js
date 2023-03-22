@@ -50,6 +50,10 @@ document.addEventListener("DOMContentLoaded", () => { //Start of DOM Event liste
 
     document.querySelectorAll(".formInput").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
+            //The following if statement is an example of Sanitizing the User's input.
+            //This in turn allows the website to be more secure in the event of an "XSS (Cross-Site-Scripting)"" attack
+            //as the user is only able to enter a specific username which is determined by the length of it.
+            //If the username is is less than the desired length then it won't be accepted
             if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
                 setInputError(inputElement, "Username must be at least 10 characters in length");
             }
