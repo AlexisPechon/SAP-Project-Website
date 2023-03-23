@@ -6,8 +6,6 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`formMessage${type}`);
 }
 
-
-
 function clearInputError(inputElement) {
     inputElement.classList.remove("formInputError");
     inputElement.parentElement.querySelector(".formInputErrorMessage").textContent = "";
@@ -39,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => { //Start of DOM Event liste
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
 
-    
-
+    //This current version of the code is insecure as there are no verfication checks put in place
+    //Meaning people could enter invalid inputs for their username and password, which would still be accepted
+    //by the website regardless
 
 }); //End of DOM event listener
