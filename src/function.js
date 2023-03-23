@@ -1,3 +1,12 @@
+// *Author: Alexis Pechon
+// *Student Number: x19358953
+// *Student Email: x19358953@student.ncirl.ie
+// *File: function.js
+// *Date: 23/03/2023
+//
+// *@reference: https://youtu.be/3GsKEtBcGTk
+
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".formMessage");
 
@@ -35,6 +44,8 @@ document.addEventListener("DOMContentLoaded", () => { //Start of DOM Event liste
     });
 
     document.querySelector("#linkLogin").addEventListener("click", e => {
+        //The following function will allow the form to sign in to be displayed while the user is the
+        //create account page and they click on the link that sends them back to the login page
         e.preventDefault();
         loginForm.classList.remove("formHidden");
         createAccountForm.classList.add("formHidden");
