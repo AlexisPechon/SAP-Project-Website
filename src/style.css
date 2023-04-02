@@ -8,8 +8,13 @@
  * @reference: https://youtu.be/3GsKEtBcGTk
 */
 
+/*
+ * The purpose of the style.css is to control how the login form should appear when the user
+  * visits the webpage for the first time.
+*/
 
 body {
+    /* CSS Block to control the appearance of the main body of the application */
     --color-primary: #009579;
     --color-primary-dark: #007f67;
     --color-secondary: #252c6a;
@@ -40,6 +45,8 @@ body {
 .container,
 .formInput,
 .formButton {
+    /* CSS Block to control how the formInput, formButton and the container should look like
+        for the login form */
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
