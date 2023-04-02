@@ -8,7 +8,14 @@
  * @reference: https://youtu.be/3GsKEtBcGTk
 */
 
+
+/*
+ * The purpose of the style.css is to control how the login form should appear when the user
+  * visits the webpage for the first time.
+*/
+
 body {
+    /* CSS Block to control the appearance of the main body of the application */
     --color-primary: #009579;
     --color-primary-dark: #007f67;
     --color-secondary: #252c6a;
@@ -27,6 +34,8 @@ body {
 }
 
 .container {
+    /* CSS Block that controls the appearance of the container in which the login
+        form will be kept in. */
     width: 400px;
     max-width: 400px;
     margin: 1rem;
@@ -39,6 +48,8 @@ body {
 .container,
 .formInput,
 .formButton {
+    /* CSS Block to control how the formInput, formButton and the container should look like
+        for the login form */
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
@@ -118,6 +129,8 @@ body {
 }
 
 .formButton:hover {
+    /* CSS Block that controls how the button would appear when
+        the user hovers over it. */
     background: var(--color-primary-dark);
 }
 
@@ -136,5 +149,7 @@ body {
 }
 
 .formLink:hover {
+    /* Controls the appearance of the link to the user so it doesn't have the underline
+        that most links have. */
     text-decoration: underline;
 }
