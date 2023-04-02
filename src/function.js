@@ -6,6 +6,8 @@
 //
 // *@reference: https://youtu.be/3GsKEtBcGTk
 
+//The JavaScript file controls the main functionalities of the login form and the
+//website as a whole.
 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".formMessage");
