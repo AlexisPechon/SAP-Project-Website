@@ -1,3 +1,15 @@
+// *Author: Alexis Pechon
+// *Student Number: x19358953
+// *Student Email: x19358953@student.ncirl.ie
+// *File: function.js
+// *Date: 23/03/2023
+//
+// *@reference: https://youtu.be/3GsKEtBcGTk
+
+//The JavaScript file controls the main functionalities of the login form and the
+//website as a whole. There are two variants of the JavaScript file, both of which
+//could be found on the secure and insecure branches on GitHub
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".formMessage");
 

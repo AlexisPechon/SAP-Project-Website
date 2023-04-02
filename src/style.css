@@ -1,3 +1,19 @@
+/*
+ * Author: Alexis Pechon
+ * Student Number: x19358953
+ * Student Email: x19358953@student.ncirl.ie
+ * File: style.css
+ * Date: 23/03/2023
+ *
+ * @reference: https://youtu.be/3GsKEtBcGTk
+*/
+
+/*
+ * The purpose of the style.css is to control how the login form should appear when the user
+ * visits the webpage for the first time. Further detail about the style.css page could be found
+ * on the secure and insecure branches on GitHub.
+*/
+
 body {
     --color-primary: #009579;
     --color-primary-dark: #007f67;
