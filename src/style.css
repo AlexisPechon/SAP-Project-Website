@@ -126,6 +126,8 @@ body {
 }
 
 .formButton:hover {
+    /* CSS Block that controls how the button would appear when
+        the user hovers over it. */
     background: var(--color-primary-dark);
 }
 
@@ -138,11 +140,15 @@ body {
 }
 
 .formLink {
+    /* Controls the appearance to the form link that would appear on the main login
+        page of the application. */
     color: var(--color-secondary);
     text-decoration: none;
     cursor: pointer;
 }
 
 .formLink:hover {
+    /* Controls the appearance of the link to the user so it doesn't have the underline
+        that most links have. */
     text-decoration: underline;
 }
